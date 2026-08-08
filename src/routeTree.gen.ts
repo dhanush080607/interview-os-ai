@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as CandidatesRouteImport } from './routes/candidates'
+import { Route as InterviewRouteImport } from './routes/interview'
 import { Route as ApiInterviewRouteImport } from './routes/api/interview'
 
 const IndexRoute = IndexRouteImport.update({
@@ -23,6 +24,11 @@ const CandidatesRoute = CandidatesRouteImport.update({
   path: '/candidates',
   getParentRoute: () => rootRouteImport,
 } as any)
+const InterviewRoute = InterviewRouteImport.update({
+  id: '/interview',
+  path: '/interview',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ApiInterviewRoute = ApiInterviewRouteImport.update({
   id: '/api/interview',
   path: '/api/interview',
@@ -32,30 +38,34 @@ const ApiInterviewRoute = ApiInterviewRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/candidates': typeof CandidatesRoute
+  '/interview': typeof InterviewRoute
   '/api/interview': typeof ApiInterviewRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/candidates': typeof CandidatesRoute
+  '/interview': typeof InterviewRoute
   '/api/interview': typeof ApiInterviewRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/candidates': typeof CandidatesRoute
+  '/interview': typeof InterviewRoute
   '/api/interview': typeof ApiInterviewRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/candidates' | '/api/interview'
+  fullPaths: '/' | '/candidates' | '/interview' | '/api/interview'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/candidates' | '/api/interview'
-  id: '__root__' | '/' | '/candidates' | '/api/interview'
+  to: '/' | '/candidates' | '/interview' | '/api/interview'
+  id: '__root__' | '/' | '/candidates' | '/interview' | '/api/interview'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   CandidatesRoute: typeof CandidatesRoute
+  InterviewRoute: typeof InterviewRoute
   ApiInterviewRoute: typeof ApiInterviewRoute
 }
 
@@ -75,6 +85,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CandidatesRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/interview': {
+      id: '/interview'
+      path: '/interview'
+      fullPath: '/interview'
+      preLoaderRoute: typeof InterviewRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/api/interview': {
       id: '/api/interview'
       path: '/api/interview'
@@ -88,6 +105,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   CandidatesRoute: CandidatesRoute,
+  InterviewRoute: InterviewRoute,
   ApiInterviewRoute: ApiInterviewRoute,
 }
 export const routeTree = rootRouteImport
