@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as CandidatesRouteImport } from './routes/candidates'
+import { Route as FeedbackRouteImport } from './routes/feedback'
 import { Route as InterviewRouteImport } from './routes/interview'
 import { Route as ApiInterviewRouteImport } from './routes/api/interview'
 
@@ -22,6 +23,11 @@ const IndexRoute = IndexRouteImport.update({
 const CandidatesRoute = CandidatesRouteImport.update({
   id: '/candidates',
   path: '/candidates',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FeedbackRoute = FeedbackRouteImport.update({
+  id: '/feedback',
+  path: '/feedback',
   getParentRoute: () => rootRouteImport,
 } as any)
 const InterviewRoute = InterviewRouteImport.update({
@@ -38,12 +44,14 @@ const ApiInterviewRoute = ApiInterviewRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/candidates': typeof CandidatesRoute
+  '/feedback': typeof FeedbackRoute
   '/interview': typeof InterviewRoute
   '/api/interview': typeof ApiInterviewRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/candidates': typeof CandidatesRoute
+  '/feedback': typeof FeedbackRoute
   '/interview': typeof InterviewRoute
   '/api/interview': typeof ApiInterviewRoute
 }
@@ -51,20 +59,28 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/candidates': typeof CandidatesRoute
+  '/feedback': typeof FeedbackRoute
   '/interview': typeof InterviewRoute
   '/api/interview': typeof ApiInterviewRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/candidates' | '/interview' | '/api/interview'
+  fullPaths: '/' | '/candidates' | '/feedback' | '/interview' | '/api/interview'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/candidates' | '/interview' | '/api/interview'
-  id: '__root__' | '/' | '/candidates' | '/interview' | '/api/interview'
+  to: '/' | '/candidates' | '/feedback' | '/interview' | '/api/interview'
+  id:
+    | '__root__'
+    | '/'
+    | '/candidates'
+    | '/feedback'
+    | '/interview'
+    | '/api/interview'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   CandidatesRoute: typeof CandidatesRoute
+  FeedbackRoute: typeof FeedbackRoute
   InterviewRoute: typeof InterviewRoute
   ApiInterviewRoute: typeof ApiInterviewRoute
 }
@@ -83,6 +99,13 @@ declare module '@tanstack/react-router' {
       path: '/candidates'
       fullPath: '/candidates'
       preLoaderRoute: typeof CandidatesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/feedback': {
+      id: '/feedback'
+      path: '/feedback'
+      fullPath: '/feedback'
+      preLoaderRoute: typeof FeedbackRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/interview': {
@@ -105,6 +128,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   CandidatesRoute: CandidatesRoute,
+  FeedbackRoute: FeedbackRoute,
   InterviewRoute: InterviewRoute,
   ApiInterviewRoute: ApiInterviewRoute,
 }

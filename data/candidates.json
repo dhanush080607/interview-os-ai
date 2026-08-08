@@ -1,0 +1,560 @@
+{
+  "candidates": [
+    {
+      "id": "sarah-chen",
+      "name": "Sarah Chen",
+      "title": "AI Engineer",
+      "track": "AI Engineering Journey",
+      "avatarInitials": "SC",
+      "missions": [
+        {
+          "day": 1,
+          "title": "How LLMs Work",
+          "topic": "llm-foundations",
+          "status": "completed",
+          "notes": "Strong grasp of context windows"
+        },
+        {
+          "day": 2,
+          "title": "Prompt Engineering Basics",
+          "topic": "prompt-engineering",
+          "status": "completed",
+          "notes": "Few-shot prompts used well"
+        },
+        {
+          "day": 3,
+          "title": "Structured Output & JSON Mode",
+          "topic": "structured-output",
+          "status": "completed",
+          "notes": ""
+        },
+        {
+          "day": 6,
+          "title": "Text Chunking Strategies",
+          "topic": "chunking",
+          "status": "completed",
+          "notes": "Used recursive chunking"
+        },
+        {
+          "day": 7,
+          "title": "Embeddings",
+          "topic": "embeddings",
+          "status": "completed",
+          "notes": "Compared 3 embedding models"
+        },
+        {
+          "day": 8,
+          "title": "Vector Databases",
+          "topic": "vector-databases",
+          "status": "completed",
+          "notes": "Shipped Chroma index"
+        },
+        {
+          "day": 9,
+          "title": "Similarity Search & Ranking",
+          "topic": "retrieval",
+          "status": "completed",
+          "notes": ""
+        },
+        {
+          "day": 10,
+          "title": "Hybrid Search & Reranking",
+          "topic": "retrieval",
+          "status": "attempted",
+          "notes": "Reranking left unfinished"
+        },
+        {
+          "day": 11,
+          "title": "RAG Pipelines",
+          "topic": "rag",
+          "status": "completed",
+          "notes": "Built citation-grounded RAG"
+        },
+        {
+          "day": 12,
+          "title": "RAG Evaluation",
+          "topic": "evaluation",
+          "status": "attempted",
+          "notes": "Eval set only partially built"
+        },
+        {
+          "day": 14,
+          "title": "APIs for AI Applications",
+          "topic": "backend-api",
+          "status": "completed",
+          "notes": "FastAPI service"
+        },
+        {
+          "day": 15,
+          "title": "Streaming Responses",
+          "topic": "backend-api",
+          "status": "completed",
+          "notes": ""
+        },
+        {
+          "day": 17,
+          "title": "State, Sessions & Memory Stores",
+          "topic": "memory",
+          "status": "completed",
+          "notes": ""
+        },
+        {
+          "day": 21,
+          "title": "Agent Memory & Context Management",
+          "topic": "agents",
+          "status": "attempted",
+          "notes": "Agent memory experiment"
+        },
+        {
+          "day": 23,
+          "title": "Model Context Protocol (MCP)",
+          "topic": "mcp",
+          "status": "skipped",
+          "notes": ""
+        },
+        {
+          "day": 26,
+          "title": "Observability & Tracing",
+          "topic": "observability",
+          "status": "skipped",
+          "notes": ""
+        }
+      ],
+      "learningSignals": [
+        {
+          "label": "Ships working retrieval systems",
+          "type": "strength"
+        },
+        {
+          "label": "Explains trade-offs clearly",
+          "type": "strength"
+        },
+        {
+          "label": "Rarely measures quality after shipping",
+          "type": "risk"
+        },
+        {
+          "label": "Avoids protocol/infra topics",
+          "type": "risk"
+        }
+      ]
+    },
+    {
+      "id": "marcus-lee",
+      "name": "Marcus Lee",
+      "title": "Backend Engineer",
+      "track": "Backend to AI Transition",
+      "avatarInitials": "ML",
+      "missions": [
+        {
+          "day": 1,
+          "title": "How LLMs Work",
+          "topic": "llm-foundations",
+          "status": "completed",
+          "notes": ""
+        },
+        {
+          "day": 2,
+          "title": "Prompt Engineering Basics",
+          "topic": "prompt-engineering",
+          "status": "completed",
+          "notes": ""
+        },
+        {
+          "day": 3,
+          "title": "Structured Output & JSON Mode",
+          "topic": "structured-output",
+          "status": "completed",
+          "notes": "Zod validation everywhere"
+        },
+        {
+          "day": 5,
+          "title": "Cost, Latency & Model Selection",
+          "topic": "llm-foundations",
+          "status": "completed",
+          "notes": ""
+        },
+        {
+          "day": 14,
+          "title": "APIs for AI Applications",
+          "topic": "backend-api",
+          "status": "completed",
+          "notes": "Production-grade API design"
+        },
+        {
+          "day": 15,
+          "title": "Streaming Responses",
+          "topic": "backend-api",
+          "status": "completed",
+          "notes": "SSE streaming"
+        },
+        {
+          "day": 16,
+          "title": "Caching & Rate Limiting",
+          "topic": "backend-api",
+          "status": "completed",
+          "notes": "Redis cache + limits"
+        },
+        {
+          "day": 17,
+          "title": "State, Sessions & Memory Stores",
+          "topic": "memory",
+          "status": "completed",
+          "notes": ""
+        },
+        {
+          "day": 18,
+          "title": "Tool Calling Fundamentals",
+          "topic": "tool-calling",
+          "status": "completed",
+          "notes": "Tool schemas"
+        },
+        {
+          "day": 19,
+          "title": "ReAct & Planning Loops",
+          "topic": "agents",
+          "status": "attempted",
+          "notes": "ReAct loop ran away"
+        },
+        {
+          "day": 23,
+          "title": "Model Context Protocol (MCP)",
+          "topic": "mcp",
+          "status": "completed",
+          "notes": "Read the MCP spec"
+        },
+        {
+          "day": 24,
+          "title": "Building an MCP Server",
+          "topic": "mcp",
+          "status": "attempted",
+          "notes": "Server half built"
+        },
+        {
+          "day": 28,
+          "title": "Deployment & Scaling",
+          "topic": "deployment",
+          "status": "completed",
+          "notes": "Dockerised deploy"
+        },
+        {
+          "day": 7,
+          "title": "Embeddings",
+          "topic": "embeddings",
+          "status": "attempted",
+          "notes": ""
+        },
+        {
+          "day": 11,
+          "title": "RAG Pipelines",
+          "topic": "rag",
+          "status": "skipped",
+          "notes": ""
+        },
+        {
+          "day": 12,
+          "title": "RAG Evaluation",
+          "topic": "evaluation",
+          "status": "skipped",
+          "notes": ""
+        }
+      ],
+      "learningSignals": [
+        {
+          "label": "Excellent backend and API instincts",
+          "type": "strength"
+        },
+        {
+          "label": "Comfortable with protocols and tooling",
+          "type": "strength"
+        },
+        {
+          "label": "Weak on retrieval quality fundamentals",
+          "type": "risk"
+        },
+        {
+          "label": "Skips evaluation work",
+          "type": "risk"
+        }
+      ]
+    },
+    {
+      "id": "priya-nair",
+      "name": "Priya Nair",
+      "title": "ML Practitioner",
+      "track": "Agents & Evaluation Focus",
+      "avatarInitials": "PN",
+      "missions": [
+        {
+          "day": 2,
+          "title": "Prompt Engineering Basics",
+          "topic": "prompt-engineering",
+          "status": "completed",
+          "notes": ""
+        },
+        {
+          "day": 4,
+          "title": "Advanced Prompting Patterns",
+          "topic": "prompt-engineering",
+          "status": "completed",
+          "notes": "Self-critique patterns"
+        },
+        {
+          "day": 7,
+          "title": "Embeddings",
+          "topic": "embeddings",
+          "status": "completed",
+          "notes": ""
+        },
+        {
+          "day": 11,
+          "title": "RAG Pipelines",
+          "topic": "rag",
+          "status": "completed",
+          "notes": ""
+        },
+        {
+          "day": 12,
+          "title": "RAG Evaluation",
+          "topic": "evaluation",
+          "status": "completed",
+          "notes": "RAGAS eval harness"
+        },
+        {
+          "day": 18,
+          "title": "Tool Calling Fundamentals",
+          "topic": "tool-calling",
+          "status": "completed",
+          "notes": ""
+        },
+        {
+          "day": 19,
+          "title": "ReAct & Planning Loops",
+          "topic": "agents",
+          "status": "completed",
+          "notes": "LangGraph ReAct agent"
+        },
+        {
+          "day": 20,
+          "title": "Multi-Agent Systems",
+          "topic": "agents",
+          "status": "completed",
+          "notes": "Multi-agent research crew"
+        },
+        {
+          "day": 21,
+          "title": "Agent Memory & Context Management",
+          "topic": "agents",
+          "status": "completed",
+          "notes": ""
+        },
+        {
+          "day": 22,
+          "title": "Agent Evaluation & Failure Modes",
+          "topic": "evaluation",
+          "status": "completed",
+          "notes": "Traced failure modes"
+        },
+        {
+          "day": 25,
+          "title": "Guardrails & Safety",
+          "topic": "guardrails",
+          "status": "attempted",
+          "notes": ""
+        },
+        {
+          "day": 26,
+          "title": "Observability & Tracing",
+          "topic": "observability",
+          "status": "completed",
+          "notes": "LangSmith tracing"
+        },
+        {
+          "day": 27,
+          "title": "Testing & Regression Suites",
+          "topic": "evaluation",
+          "status": "attempted",
+          "notes": ""
+        },
+        {
+          "day": 8,
+          "title": "Vector Databases",
+          "topic": "vector-databases",
+          "status": "attempted",
+          "notes": "Index tuning unclear"
+        },
+        {
+          "day": 28,
+          "title": "Deployment & Scaling",
+          "topic": "deployment",
+          "status": "skipped",
+          "notes": ""
+        },
+        {
+          "day": 24,
+          "title": "Building an MCP Server",
+          "topic": "mcp",
+          "status": "skipped",
+          "notes": ""
+        }
+      ],
+      "learningSignals": [
+        {
+          "label": "Deep agent architecture experience",
+          "type": "strength"
+        },
+        {
+          "label": "Measures quality with real eval harnesses",
+          "type": "strength"
+        },
+        {
+          "label": "Shaky on vector index internals",
+          "type": "risk"
+        },
+        {
+          "label": "Limited deployment exposure",
+          "type": "risk"
+        }
+      ]
+    },
+    {
+      "id": "diego-alvarez",
+      "name": "Diego Alvarez",
+      "title": "Full-Stack Developer",
+      "track": "Product-Focused AI Builder",
+      "avatarInitials": "DA",
+      "missions": [
+        {
+          "day": 1,
+          "title": "How LLMs Work",
+          "topic": "llm-foundations",
+          "status": "completed",
+          "notes": ""
+        },
+        {
+          "day": 2,
+          "title": "Prompt Engineering Basics",
+          "topic": "prompt-engineering",
+          "status": "completed",
+          "notes": ""
+        },
+        {
+          "day": 3,
+          "title": "Structured Output & JSON Mode",
+          "topic": "structured-output",
+          "status": "attempted",
+          "notes": ""
+        },
+        {
+          "day": 6,
+          "title": "Text Chunking Strategies",
+          "topic": "chunking",
+          "status": "completed",
+          "notes": ""
+        },
+        {
+          "day": 7,
+          "title": "Embeddings",
+          "topic": "embeddings",
+          "status": "completed",
+          "notes": ""
+        },
+        {
+          "day": 8,
+          "title": "Vector Databases",
+          "topic": "vector-databases",
+          "status": "completed",
+          "notes": "Used pgvector"
+        },
+        {
+          "day": 11,
+          "title": "RAG Pipelines",
+          "topic": "rag",
+          "status": "completed",
+          "notes": "Support-docs RAG"
+        },
+        {
+          "day": 13,
+          "title": "Advanced RAG Architectures",
+          "topic": "rag",
+          "status": "attempted",
+          "notes": "Query rewriting started"
+        },
+        {
+          "day": 14,
+          "title": "APIs for AI Applications",
+          "topic": "backend-api",
+          "status": "completed",
+          "notes": ""
+        },
+        {
+          "day": 15,
+          "title": "Streaming Responses",
+          "topic": "backend-api",
+          "status": "attempted",
+          "notes": ""
+        },
+        {
+          "day": 25,
+          "title": "Guardrails & Safety",
+          "topic": "guardrails",
+          "status": "completed",
+          "notes": "Prompt injection filters"
+        },
+        {
+          "day": 30,
+          "title": "Capstone Build",
+          "topic": "capstone",
+          "status": "completed",
+          "notes": "Shipped capstone"
+        },
+        {
+          "day": 31,
+          "title": "Demo & Technical Communication",
+          "topic": "communication",
+          "status": "completed",
+          "notes": "Demoed to cohort"
+        },
+        {
+          "day": 19,
+          "title": "ReAct & Planning Loops",
+          "topic": "agents",
+          "status": "skipped",
+          "notes": ""
+        },
+        {
+          "day": 22,
+          "title": "Agent Evaluation & Failure Modes",
+          "topic": "evaluation",
+          "status": "skipped",
+          "notes": ""
+        },
+        {
+          "day": 26,
+          "title": "Observability & Tracing",
+          "topic": "observability",
+          "status": "skipped",
+          "notes": ""
+        }
+      ],
+      "learningSignals": [
+        {
+          "label": "Ships user-facing AI products end to end",
+          "type": "strength"
+        },
+        {
+          "label": "Good safety and guardrail awareness",
+          "type": "strength"
+        },
+        {
+          "label": "Little agent experience",
+          "type": "risk"
+        },
+        {
+          "label": "No observability practice",
+          "type": "risk"
+        }
+      ]
+    }
+  ]
+}
