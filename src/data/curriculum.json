@@ -1,0 +1,499 @@
+{
+  "cohort": "31-Day AI Engineering Cohort",
+  "modules": [
+    {
+      "id": "foundations",
+      "name": "Foundations",
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "retrieval",
+      "name": "Retrieval",
+      "days": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "id": "backend",
+      "name": "Backend",
+      "days": [
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "id": "agents",
+      "name": "Agents",
+      "days": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ]
+    },
+    {
+      "id": "protocols",
+      "name": "Protocols",
+      "days": [
+        23,
+        24
+      ]
+    },
+    {
+      "id": "production",
+      "name": "Production",
+      "days": [
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "capstone",
+      "name": "Capstone",
+      "days": [
+        30,
+        31
+      ]
+    }
+  ],
+  "days": [
+    {
+      "day": 1,
+      "module": "Foundations",
+      "title": "How LLMs Work",
+      "topic": "llm-foundations",
+      "objectives": [
+        "Explain tokens, context windows and sampling",
+        "Compare model families and cost/latency trade-offs"
+      ],
+      "tools": [
+        "OpenAI API",
+        "Tokenizer playground"
+      ]
+    },
+    {
+      "day": 2,
+      "module": "Foundations",
+      "title": "Prompt Engineering Basics",
+      "topic": "prompt-engineering",
+      "objectives": [
+        "Write role, task and constraint prompts",
+        "Use few-shot examples effectively"
+      ],
+      "tools": [
+        "OpenAI API",
+        "Prompt playground"
+      ]
+    },
+    {
+      "day": 3,
+      "module": "Foundations",
+      "title": "Structured Output & JSON Mode",
+      "topic": "structured-output",
+      "objectives": [
+        "Force schema-valid model output",
+        "Validate responses with Zod"
+      ],
+      "tools": [
+        "Zod",
+        "JSON schema"
+      ]
+    },
+    {
+      "day": 4,
+      "module": "Foundations",
+      "title": "Advanced Prompting Patterns",
+      "topic": "prompt-engineering",
+      "objectives": [
+        "Apply decomposition and self-critique patterns",
+        "Control verbosity and format drift"
+      ],
+      "tools": [
+        "Prompt library"
+      ]
+    },
+    {
+      "day": 5,
+      "module": "Foundations",
+      "title": "Cost, Latency & Model Selection",
+      "topic": "llm-foundations",
+      "objectives": [
+        "Estimate token cost per request",
+        "Choose models by workload profile"
+      ],
+      "tools": [
+        "Pricing calculator"
+      ]
+    },
+    {
+      "day": 6,
+      "module": "Retrieval",
+      "title": "Text Chunking Strategies",
+      "topic": "chunking",
+      "objectives": [
+        "Compare fixed, recursive and semantic chunking",
+        "Tune chunk size and overlap"
+      ],
+      "tools": [
+        "LangChain splitters"
+      ]
+    },
+    {
+      "day": 7,
+      "module": "Retrieval",
+      "title": "Embeddings",
+      "topic": "embeddings",
+      "objectives": [
+        "Explain vector representations of meaning",
+        "Select an embedding model for a workload"
+      ],
+      "tools": [
+        "OpenAI embeddings",
+        "sentence-transformers"
+      ]
+    },
+    {
+      "day": 8,
+      "module": "Retrieval",
+      "title": "Vector Databases",
+      "topic": "vector-databases",
+      "objectives": [
+        "Index and query vectors with metadata filters",
+        "Compare HNSW and IVF indexes"
+      ],
+      "tools": [
+        "Chroma",
+        "Pinecone",
+        "pgvector"
+      ]
+    },
+    {
+      "day": 9,
+      "module": "Retrieval",
+      "title": "Similarity Search & Ranking",
+      "topic": "retrieval",
+      "objectives": [
+        "Compare cosine, dot product and euclidean",
+        "Interpret top-k ranking behaviour"
+      ],
+      "tools": [
+        "Chroma"
+      ]
+    },
+    {
+      "day": 10,
+      "module": "Retrieval",
+      "title": "Hybrid Search & Reranking",
+      "topic": "retrieval",
+      "objectives": [
+        "Combine BM25 with vector search",
+        "Apply cross-encoder reranking"
+      ],
+      "tools": [
+        "BM25",
+        "Cohere rerank"
+      ]
+    },
+    {
+      "day": 11,
+      "module": "Retrieval",
+      "title": "RAG Pipelines",
+      "topic": "rag",
+      "objectives": [
+        "Build an end-to-end retrieval augmented generation pipeline",
+        "Ground answers with citations"
+      ],
+      "tools": [
+        "LangChain",
+        "Chroma"
+      ]
+    },
+    {
+      "day": 12,
+      "module": "Retrieval",
+      "title": "RAG Evaluation",
+      "topic": "evaluation",
+      "objectives": [
+        "Measure faithfulness, recall and precision",
+        "Build a golden question set"
+      ],
+      "tools": [
+        "RAGAS"
+      ]
+    },
+    {
+      "day": 13,
+      "module": "Retrieval",
+      "title": "Advanced RAG Architectures",
+      "topic": "rag",
+      "objectives": [
+        "Implement query rewriting and multi-hop retrieval",
+        "Design fallbacks for empty retrieval"
+      ],
+      "tools": [
+        "LangChain"
+      ]
+    },
+    {
+      "day": 14,
+      "module": "Backend",
+      "title": "APIs for AI Applications",
+      "topic": "backend-api",
+      "objectives": [
+        "Design request/response contracts for AI endpoints",
+        "Handle timeouts and retries"
+      ],
+      "tools": [
+        "FastAPI",
+        "Node/Express"
+      ]
+    },
+    {
+      "day": 15,
+      "module": "Backend",
+      "title": "Streaming Responses",
+      "topic": "backend-api",
+      "objectives": [
+        "Stream tokens over SSE",
+        "Handle partial output on the client"
+      ],
+      "tools": [
+        "SSE",
+        "Fetch streams"
+      ]
+    },
+    {
+      "day": 16,
+      "module": "Backend",
+      "title": "Caching & Rate Limiting",
+      "topic": "backend-api",
+      "objectives": [
+        "Cache deterministic completions",
+        "Protect providers with rate limits"
+      ],
+      "tools": [
+        "Redis"
+      ]
+    },
+    {
+      "day": 17,
+      "module": "Backend",
+      "title": "State, Sessions & Memory Stores",
+      "topic": "memory",
+      "objectives": [
+        "Persist conversation state across requests",
+        "Choose between summary and window memory"
+      ],
+      "tools": [
+        "Redis",
+        "Postgres"
+      ]
+    },
+    {
+      "day": 18,
+      "module": "Agents",
+      "title": "Tool Calling Fundamentals",
+      "topic": "tool-calling",
+      "objectives": [
+        "Define tool schemas the model can call",
+        "Validate and execute tool arguments safely"
+      ],
+      "tools": [
+        "Function calling"
+      ]
+    },
+    {
+      "day": 19,
+      "module": "Agents",
+      "title": "ReAct & Planning Loops",
+      "topic": "agents",
+      "objectives": [
+        "Implement reason-act-observe loops",
+        "Bound iterations and cost"
+      ],
+      "tools": [
+        "LangGraph"
+      ]
+    },
+    {
+      "day": 20,
+      "module": "Agents",
+      "title": "Multi-Agent Systems",
+      "topic": "agents",
+      "objectives": [
+        "Split work across specialised agents",
+        "Design agent handoff protocols"
+      ],
+      "tools": [
+        "LangGraph",
+        "CrewAI"
+      ]
+    },
+    {
+      "day": 21,
+      "module": "Agents",
+      "title": "Agent Memory & Context Management",
+      "topic": "agents",
+      "objectives": [
+        "Manage long-horizon context windows",
+        "Summarise and retrieve prior steps"
+      ],
+      "tools": [
+        "LangGraph"
+      ]
+    },
+    {
+      "day": 22,
+      "module": "Agents",
+      "title": "Agent Evaluation & Failure Modes",
+      "topic": "evaluation",
+      "objectives": [
+        "Detect loops, tool misuse and hallucinated tools",
+        "Trace agent decisions"
+      ],
+      "tools": [
+        "LangSmith"
+      ]
+    },
+    {
+      "day": 23,
+      "module": "Protocols",
+      "title": "Model Context Protocol (MCP)",
+      "topic": "mcp",
+      "objectives": [
+        "Explain MCP client/server architecture",
+        "Expose resources, tools and prompts over MCP"
+      ],
+      "tools": [
+        "MCP SDK"
+      ]
+    },
+    {
+      "day": 24,
+      "module": "Protocols",
+      "title": "Building an MCP Server",
+      "topic": "mcp",
+      "objectives": [
+        "Implement tool lifecycle and transport",
+        "Test an MCP server with a client"
+      ],
+      "tools": [
+        "MCP SDK"
+      ]
+    },
+    {
+      "day": 25,
+      "module": "Production",
+      "title": "Guardrails & Safety",
+      "topic": "guardrails",
+      "objectives": [
+        "Filter prompt injection and unsafe output",
+        "Enforce policy at the boundary"
+      ],
+      "tools": [
+        "Guardrails"
+      ]
+    },
+    {
+      "day": 26,
+      "module": "Production",
+      "title": "Observability & Tracing",
+      "topic": "observability",
+      "objectives": [
+        "Trace prompts, tokens and latency",
+        "Alert on quality regressions"
+      ],
+      "tools": [
+        "LangSmith",
+        "OpenTelemetry"
+      ]
+    },
+    {
+      "day": 27,
+      "module": "Production",
+      "title": "Testing & Regression Suites",
+      "topic": "evaluation",
+      "objectives": [
+        "Write deterministic tests for non-deterministic systems",
+        "Run offline eval in CI"
+      ],
+      "tools": [
+        "Vitest",
+        "RAGAS"
+      ]
+    },
+    {
+      "day": 28,
+      "module": "Production",
+      "title": "Deployment & Scaling",
+      "topic": "deployment",
+      "objectives": [
+        "Deploy inference workloads and manage concurrency",
+        "Plan for cold starts and quotas"
+      ],
+      "tools": [
+        "Docker",
+        "Cloud Run"
+      ]
+    },
+    {
+      "day": 29,
+      "module": "Production",
+      "title": "Cost Optimisation in Production",
+      "topic": "deployment",
+      "objectives": [
+        "Reduce token spend with caching and routing",
+        "Measure unit economics"
+      ],
+      "tools": [
+        "Pricing dashboards"
+      ]
+    },
+    {
+      "day": 30,
+      "module": "Capstone",
+      "title": "Capstone Build",
+      "topic": "capstone",
+      "objectives": [
+        "Ship an end-to-end AI application",
+        "Document architecture decisions"
+      ],
+      "tools": [
+        "Full stack"
+      ]
+    },
+    {
+      "day": 31,
+      "module": "Capstone",
+      "title": "Demo & Technical Communication",
+      "topic": "communication",
+      "objectives": [
+        "Explain trade-offs to a technical audience",
+        "Defend architecture decisions"
+      ],
+      "tools": [
+        "Slides",
+        "Demo"
+      ]
+    }
+  ]
+}
