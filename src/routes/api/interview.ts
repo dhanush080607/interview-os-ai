@@ -143,7 +143,7 @@ export const Route = createFileRoute("/api/interview")({
             reply: "Interview completed.",
             done: true,
             feedback: session.feedback,
-            assessment: session.assessment ?? undefined,
+            ...(session.assessment ? { assessment: session.assessment } : {}),
             progress: progressOf(session),
             memory: buildMemory(session),
           } satisfies InterviewApiResponse);
